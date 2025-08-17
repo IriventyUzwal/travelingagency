@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Happy Travels</div>
+
+    <!-- Hamburger menu (checkbox hack) -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">about us</a></li>
+      <li><a href="#services">servics</a></li>
+      <li><a href="#gallery">gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Explore the World with Happy Travels</h1>
+      <p>Your journey begins here. Discover amazing destinations today.</p>
+      
+    </div>
+  </section>
+  <!-- ABOUT US -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="images/bus.jpg" alt="About Us">
+      </div>
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          Welcome to <strong>Happy Travels</strong>, your trusted travel partner for unforgettable journeys. 
+          We provide comfortable and safe jounney with great facilities with a decent budget.
+        </p>
+        <p>
+          With our expert guides and best-in-class service, we make sure your trips 
+          are smooth, safe, and full of adventure. Join thousands of happy travelers 
+          who explored the world with us. 
+        </p>
+       
+      </div>
+    </div>
+  </section>
+  <!-- SERVICES -->
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="services-cards">
+    <div class="service-card">
+      <img src="images/flight.jpg" alt="Flight Booking">
+      <h3>Flight Booking</h3>
+      <p>Book affordable domestic and international flights with top airlines.</p>
+    </div>
+    <div class="service-card">
+      <img src="images/stay.jpg" alt="Hotel Reservations">
+      <h3>Hotel Reservations</h3>
+      <p>Find and reserve the best hotels at unbeatable prices worldwide.</p>
+    </div>
+    <div class="service-card">
+      <img src="images/guide.jpg" alt="Guided Tours">
+      <h3>Guided Tours</h3>
+      <p>Enjoy group and private sightseeing tours with expert local guides.</p>
+    </div>
+  </div>
+</section>
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="./images/andhra.jpg" alt="Beach Paradise" onclick="openPopup(this)">
+      <p><strong>Andhra Pradesh,</strong> known for its stunning beaches along the Bay of Bengal, majestic temples, and rich cultural heritage, offers a unique blend of spiritual and natural experiences. Key attractions include the famous Tirupati Venkateswara Temple, beautiful Araku Valley, and the breathtaking Borra Caves. The state's diverse cuisine, highlighted by spicy dishes and unique sweets, adds to the vibrant culinary landscape, making it a must-visit destination for travelers seeking both adventure and tranquility.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="./images/telangana.jpg" alt="Mountain Escape" onclick="openPopup(this)">
+      <p><strong>Telalngana,</strong>is a vibrant state in southern India known for its rich cultural heritage and historical significance. Major attractions include the iconic Charminar and Golconda Fort in Hyderabad, which showcase stunning architecture and royal history. Visitors can also explore the scenic Nagarjunasagar and enjoy vibrant festivals such as Bonalu and Bathukamma that reflect local traditions. The state's diverse landscape, from bustling urban centers to tranquil lakes, makes it a unique destination for travelers.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="./images/karnataka.jpg" alt="City Lights" onclick="openPopup(this)">
+      <p><strong>Karnataka </strong> a southwestern Indian state known for its rich heritage, diverse landscapes, and booming IT industry centered in Bengaluru. Formed in 1956 as Mysore State and renamed in 1973, it is the sixth largest state by area and the eighth most populous in India. Kannada is the official language, and the state boasts famous historic sites like Hampi and Mysore Palace. Karnataka’s economy thrives on agriculture, manufacturing, and information technology, making it one of India’s most prosperous states.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="./images/tamilnadu.jpg"" alt="Forest Retreat" onclick="openPopup(this)">
+      <p><strong>Tamil Nadu</strong>is a state located in southern India, known for its rich cultural heritage and ancient history. Its capital is Chennai, a major city and economic hub. The state is famous for its classical dance forms, beautiful temples, and vibrant festivals like Pongal. Additionally, Tamil Nadu has a strong agricultural and industrial economy, contributing significantly to India's GDP.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="./images/kerala.jpg" alt="Desert Adventure" onclick="openPopup(this)">
+      <p><strong>Kerala</strong>is a southwestern Indian state known as "God’s Own Country" for its stunning natural beauty and vibrant culture. It boasts serene backwaters, lush greenery, and beautiful beaches along the Arabian Sea coast. Malayalam is the official language, and Kerala is famous for classical dance forms such as Kathakali and Mohiniyattam. The state also has the highest literacy rate in India and is a popular destination for tourism and Ayurvedic treatments.</p>
+    </div>
+  </div>
+
+  <!-- Popup container -->
+  <div id="popup" class="popup" onclick="closePopup()">
+    <span class="close">&times;</span>
+    <img id="popup-img" src="" alt="Popup Image">
+    <p id="popup-caption"></p>
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <div class="contact-item">
+      <h3>Email</h3>
+      <p><a href="mailto:info@travelnow.com">happytravels@gmail.com</a></p>
+    </div>
+    <div class="contact-item">
+      <h3>Phone</h3>
+      <p><a href="tel:+912345678900">+91-4455667788</a></p>
+    </div>
+    <div class="contact-item">
+      <h3>Main Branch</h3>
+      <p>xyz street ,Andhra Pradesh,India</p>
+    </div>
+    <div class="contact-item">
+      <h3>Other Branches</h3>
+      <ul>
+        <li> a street ,Delhi, India </li>
+        <li>b street ,Bangalore, India</li>
+        <li>c street ,Goa,India</li>
+      </ul>
+    </div>
+  </div>
+  <div class="contact-form">
+    <h3>Send us a Message</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="3" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+</body>
+</html>
