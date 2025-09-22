@@ -239,41 +239,48 @@ body {
   }
 }
 /* GALLERY */
-.gallery {
-  padding: 60px 10%;
-  background: #fff;
+h1 {
   text-align: center;
+  margin-bottom: 2rem;
 }
-.gallery h2 {
-  color: #0d6efd;
-  font-size: 2rem;
-  margin-bottom: 40px;
-  letter-spacing: 1px;
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;              /* Wrap cards to next line when needed */
+  gap: 2rem;                    /* Space between cards */
+  justify-content: center;      /* Center cards horizontally */
+  padding: 1rem 0;
 }
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  justify-items: center;
+
+.card {
+  width: 18rem;                 /* Fixed width for cards */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background: white;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: transform 0.2s;
 }
-.gallery-item {
-  cursor: pointer;
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
 }
-.gallery-item img {
+
+.card-img-top {
   width: 100%;
-  max-width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-  transition: transform 0.3s, box-shadow 0.3s;
+  height: 170px;
+  object-fit: cover;
 }
-.gallery-item img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-.gallery-item p {
-  margin-top: 10px;
-  font-weight: 600;
-  color: #333;
+
+/* Responsive: stack cards on narrow screens */
+@media (max-width: 900px) {
+  .card-container {
+    justify-content: center;
+  }
+  .card {
+    width: 90vw;
+    max-width: 24rem;
+  }
 }
 
 /* IMAGE POPUP */

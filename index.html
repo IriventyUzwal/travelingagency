@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Agency</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 
@@ -20,7 +21,7 @@
       <li><a href="#">Home</a></li>
       <li><a href="#about">about us</a></li>
       <li><a href="#services">servics</a></li>
-      <li><a href="#gallery">gallery</a></li>
+      <li><a href="#gallery">Gallery</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -76,38 +77,55 @@
   </div>
 </section>
 <!-- GALLERY -->
-<section id="gallery" class="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="./images/andhra.jpg" alt="Beach Paradise" onclick="openPopup(this)">
-      <p><strong>Andhra Pradesh,</strong> known for its stunning beaches along the Bay of Bengal, majestic temples, and rich cultural heritage, offers a unique blend of spiritual and natural experiences. Key attractions include the famous Tirupati Venkateswara Temple, beautiful Araku Valley, and the breathtaking Borra Caves. The state's diverse cuisine, highlighted by spicy dishes and unique sweets, adds to the vibrant culinary landscape, making it a must-visit destination for travelers seeking both adventure and tranquility.</p>
-    </div>
-    <div class="gallery-item">
-      <img src="./images/telangana.jpg" alt="Mountain Escape" onclick="openPopup(this)">
-      <p><strong>Telalngana,</strong>is a vibrant state in southern India known for its rich cultural heritage and historical significance. Major attractions include the iconic Charminar and Golconda Fort in Hyderabad, which showcase stunning architecture and royal history. Visitors can also explore the scenic Nagarjunasagar and enjoy vibrant festivals such as Bonalu and Bathukamma that reflect local traditions. The state's diverse landscape, from bustling urban centers to tranquil lakes, makes it a unique destination for travelers.</p>
-    </div>
-    <div class="gallery-item">
-      <img src="./images/karnataka.jpg" alt="City Lights" onclick="openPopup(this)">
-      <p><strong>Karnataka </strong> a southwestern Indian state known for its rich heritage, diverse landscapes, and booming IT industry centered in Bengaluru. Formed in 1956 as Mysore State and renamed in 1973, it is the sixth largest state by area and the eighth most populous in India. Kannada is the official language, and the state boasts famous historic sites like Hampi and Mysore Palace. Karnataka’s economy thrives on agriculture, manufacturing, and information technology, making it one of India’s most prosperous states.</p>
-    </div>
-    <div class="gallery-item">
-      <img src="./images/tamilnadu.jpg"" alt="Forest Retreat" onclick="openPopup(this)">
-      <p><strong>Tamil Nadu</strong>is a state located in southern India, known for its rich cultural heritage and ancient history. Its capital is Chennai, a major city and economic hub. The state is famous for its classical dance forms, beautiful temples, and vibrant festivals like Pongal. Additionally, Tamil Nadu has a strong agricultural and industrial economy, contributing significantly to India's GDP.</p>
-    </div>
-    <div class="gallery-item">
-      <img src="./images/kerala.jpg" alt="Desert Adventure" onclick="openPopup(this)">
-      <p><strong>Kerala</strong>is a southwestern Indian state known as "God’s Own Country" for its stunning natural beauty and vibrant culture. It boasts serene backwaters, lush greenery, and beautiful beaches along the Arabian Sea coast. Malayalam is the official language, and Kerala is famous for classical dance forms such as Kathakali and Mohiniyattam. The state also has the highest literacy rate in India and is a popular destination for tourism and Ayurvedic treatments.</p>
-    </div>
-  </div>
 
-  <!-- Popup container -->
-  <div id="popup" class="popup" onclick="closePopup()">
-    <span class="close">&times;</span>
-    <img id="popup-img" src="" alt="Popup Image">
-    <p id="popup-caption"></p>
+<section id="gallery" class="gallery">
+  <h1>Gallery</h1>
+  <div class="card-container">
+    <div class="card" style="width: 18rem;">
+      <img src="./images/andhra.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Andhra Pradesh</h5>
+        <p class="card-text">Andhra Pradesh, known for its stunning beaches along the Bay of Bengal, majestic temples, and rich cultural heritage...</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./images/telangana.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Telangana</h5>
+        <p class="card-text">Telalngana,is a vibrant state in southern India known for its rich cultural heritage and historical significance...</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./images/karnataka.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Karnataka</h5>
+        <p class="card-text">Karnataka a southwestern Indian state known for its rich heritage, diverse landscapes, and booming IT industry centered in Bengaluru...</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./images/tamilnadu.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tamil Nadu</h5>
+        <p class="card-text">Tamil Naduis a state located in southern India, known for its rich cultural heritage and ancient history...</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./images/kerala.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kerala</h5>
+        <p class="card-text">Keralais a southwestern Indian state known as "God’s Own Country" for its stunning natural beauty and vibrant culture...</p>
+      </div>
+    </div>
   </div>
 </section>
+
+<!-- Popup container -->
+<div id="popup" class="popup" onclick="closePopup()">
+  <span class="close">&times;</span>
+  <img id="popup-img" src="" alt="Popup Image">
+  <p id="popup-caption"></p>
+</div>
+
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <h2>Contact Us</h2>
@@ -159,5 +177,6 @@
     </div>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
